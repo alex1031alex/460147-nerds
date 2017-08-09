@@ -1,6 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Александров](https://up.htmlacademy.ru/htmlcss/18/user/460147).
+* Наставник: Andrius Chepulis.
 
 ---
 
