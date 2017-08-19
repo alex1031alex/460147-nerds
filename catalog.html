@@ -4,7 +4,63 @@
 	<meta charset="UTF-8">
 	<title>Дизайн-студия Нёрдс</title>
 </head>
+
 <body>
-	
+	<header class="main-header">
+  		<nav class="main-navigation">
+  			<a href="index.html" class="main-header-logo">
+  				<img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+  			</a>
+  			<ul class="site-navigation">
+  				<li><a href="studio.html">Студия</a></li>
+  				<li><a href="clients.html">Клиенты</a></li>
+  				<li><a>Магазин</a></li>
+  				<li><a href="contacts.html">Контакты</a></li>
+  			</ul>
+  			<span class="user-basket">Корзина</span>
+  		</nav>
+	</header>
+
+	<main class="container">
+	<h1>Магазин готовых шаблонов</h1>
+		
+	</main>
+
+	<footer class="main-footer">
+  		<div class="main-footer-map">
+  			<img src="img/map.jpg" alt="Нёрдс на карте Санкт-Петербурга: ул. Б. Конюшенная д.19/8">
+  		</div>
+  		<p class="footer-contacts">
+  			<span>NЁRDS DESIGN STUDIO</span><br>
+  			91186, Санкт-Петербург, <br>
+			ул. Б. Конюшенная, д. 19/8 <br><br>
+			тел. +7 (812) 275-75-75<br>
+			<button type="button" class="button main-footer-button">Напишите нам</button>
+  		</p>
+  	<section class="footer-social">
+  		<h2 class="visually-hidden">Мы в социальных сетях</h2>
+  		<ul class="footer-social-list">
+  				<li><a class="social-button" href="#">Вконтакте</a></li>
+				<li><a class="social-button" href="#">Фейсбук</a></li>
+				<li><a class="social-button" href="#">Инстаграм</a></li>
+  		</ul>
+  		<b>Давайте дружить, это выгодно!</b>
+  		<p>Скидка 10% для друзей из социальных сетей.</p>
+  	</section>
+  	</footer>
+
+  	<section class="modal modal-write-us">
+  		<h2>напишите нам</h2>
+  		<form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
+  			<label for="name-field">Ваше имя:</label>
+  			<input type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста" class="modal-name">
+  			<label for="email-field">Ваш e-mail</label>
+  			<input type="email" name="email" id="email-field" placeholder="Для отправки ответа" class="modal-email">
+  			<label for="text-field">Текст письма</label>
+  			<textarea name="text" id="text-field" class="modal-text">В свободной форме</textarea>
+  			<button type="submit" class="button"></button>
+  			<button type="button" class="modal-close">Закрыть форму</button>
+  		</form>
+  	</section>
 </body>
 </html>
