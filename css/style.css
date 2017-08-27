@@ -163,7 +163,11 @@ a {
 	text-transform: uppercase;
 }
 
-.about-us-features-item b {
+.about-us-features-list {
+	text-align: center;
+}
+
+.about-us-features-list b {
 	font-size: 45px;
 	color: #000000; ;
 	font-weight: 700;
@@ -332,4 +336,9 @@ a {
 .pagination-item-current a {
 	background-color: #ffffff;
 	border: 3px solid #dbdbdb;
+}
+
+.lower-row {
+	color: #283136; ;
+	line-height: 18px;
 }
