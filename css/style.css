@@ -1,10 +1,11 @@
 html, body {
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 
-	font-family: 'Roboto', Arial, sans-serif ;
+	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
-	color: #283136; ;
+	color: #283136; 
 	font-weight: normal;
 	line-height: 24px;
 }
@@ -13,9 +14,27 @@ a {
 	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+ 	overflow: hidden;
+}
+
 .page-title {
 	font-size: 55px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 500;
 	line-height: 55px;
 	text-align: center;
@@ -24,7 +43,7 @@ a {
 
 .btn {
 	font-size: 16px;
-	color: #ffffff; ;
+	color: #ffffff; 
 	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -65,10 +84,6 @@ a {
 .btn-yellow:hover,
 .btn-yellow:focus {
 	background-color: #eab534;
-}
-
-.page-header, {
-	background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -113,10 +128,11 @@ a.page-current {
 
 .features {
 	background-color: #eeeeee;
+}
 
 .features-item h3 {
 	font-size: 55px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 500;
 	line-height: 55px;
 }
@@ -137,40 +153,38 @@ a.page-current {
 	opacity: 0.3;
 }
 
-.services-item h3 {
-	font-size: 24px;
-	color: #000000; ;
-	font-weight: 700;
-	line-height: 30px;
-	text-transform: uppercase;
-}
-
-.services-item {
+/* {
 	position: relative;
 	padding-top: 146px;
+	background-color: red;
 }
 
 .services-item::before {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 300px;
-	height: 146px;
-	content: "";
-	background: url("../img/illustration-1.png");
-	
-} 
+	content: "fff";
+	background-image: url("../img/illustration-1.png");
+}
+
+.services-item h3 {
+	font-size: 24px;
+	color: #000000; ;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+}*/
 
 .about-us-left b {
 	font-size: 45px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 500;
 	line-height: 45px;
 }
 
 .about-us-subtitle {
 	font-size: 16px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 700;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -182,7 +196,7 @@ a.page-current {
 
 .about-us-features-list b {
 	font-size: 45px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 700;
 	line-height: 10px;
 }
@@ -210,21 +224,21 @@ a.page-current {
 
 .footer-bottom b {
 	font-size: 36px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 700;
 	line-height: 36px;
 }
 
 .modal-write-us h2 {
 	font-size: 45px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 500;
 	line-height: 45px;
 }
 
 .write-us-form label {
 	font-size: 16px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 700;
 	line-height: 18px;
 }
@@ -249,7 +263,7 @@ a.page-current {
 
 .filter legend {
 	font-size: 18px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 700;
 	line-height: 30px;
 	letter-spacing: 0.01em;
@@ -263,7 +277,7 @@ a.page-current {
 
 .filter .filter-btn {
 	font-size: 16px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -274,7 +288,7 @@ a.page-current {
 
 .sorting b {
 	font-size: 18px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 700;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -335,7 +349,7 @@ a.page-current {
 
 .pagination-item a {
 	font-size: 16px;
-	color: #000000; ;
+	color: #000000; 
 	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
@@ -348,6 +362,13 @@ a.page-current {
 }
 
 .lower-row {
-	color: #283136; ;
+	color: #283136; 
 	line-height: 18px;
+}
+
+/*Сеточные стили*/
+
+.gray-wrapper {
+	min-width: 100%;
+	background-color: #eeeeee;
 }
