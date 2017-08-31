@@ -21,6 +21,7 @@ img {
 
 .visually-hidden {
 	position: absolute;
+	display: none;
 	width: 1px;
 	height: 1px;
 	margin: -1px;
@@ -51,6 +52,7 @@ img {
 	vertical-align: middle;
 	border: none;
 	border-radius: 2px;
+	padding: 16px 40px;
 }
 
 .btn:active {
@@ -104,6 +106,8 @@ img {
 .catalog-list,
 .pagination-list {
 	list-style: none;
+	margin: 0;
+	padding: 0; /*Сбрасываем отступы по умолчанию у списков*/
 }
 
 .site-navigation a {
@@ -140,7 +144,7 @@ a.page-current {
 .features-item a {
 	color: #ffffff;
 	background-color: #fb565a;
-	padding: 20px 50px;
+	padding: 16px 54px;
 }
 
 .features-item a:hover,
@@ -153,27 +157,25 @@ a.page-current {
 	opacity: 0.3;
 }
 
-/* {
-	position: relative;
-	padding-top: 146px;
-	background-color: red;
+.services {
+	padding-bottom: 96px;
 }
-
-.services-item::before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: "fff";
-	background-image: url("../img/illustration-1.png");
-}
-
 .services-item h3 {
 	font-size: 24px;
 	color: #000000; ;
 	font-weight: 700;
 	line-height: 30px;
 	text-transform: uppercase;
-}*/
+	margin: 24px 0 17px 0;
+}
+
+.services-item p {
+	width: 244px;
+	margin-left: 0;
+	margin-right: auto;
+	margin-top: 16px;
+	margin-bottom: 44px;
+}
 
 .about-us-left b {
 	font-size: 45px;
@@ -368,7 +370,151 @@ a.page-current {
 
 /*Сеточные стили*/
 
-.gray-wrapper {
-	min-width: 100%;
+.page-header {
+	margin: 0;
+	padding: 0;
+	padding-top: 48px;
 	background-color: #eeeeee;
+
+}
+
+.container {
+	width: 1160px;
+	padding: 0 20px 0 20px;
+	margin: 0 auto;
+}
+
+.main-navigation {
+	display: flex;
+}
+
+.main-header-logo {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+}
+
+.site-navigation {
+	margin: 0;
+	margin-top: 27px;
+	margin-left: auto;    /*Расстояние 60px между блоками логотипа и меню*/
+	padding: 0;
+	width: 800px;
+	display: flex;
+}
+
+.site-navigation li {
+	margin-right: 47px;
+}
+
+.site-navigation li:last-child {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.basket {
+	padding-left: 44px;
+}
+
+.features-list {
+	margin: 0;
+	padding: 0;
+	
+}
+
+.features-item {
+	display: none;
+	padding-top: 75px;
+	position: relative;
+	padding-bottom: 94px;
+	padding-right: 760px;  /*Сюда вставим фоновую картинку*/
+}
+
+.features-item-1 {
+	position: relative;
+	display: block;
+}
+
+.features-item h3 {
+	margin: 0;
+	margin-top: -5px;
+	margin-bottom: 25px;
+	width: 520px;
+}
+
+.features-item p {
+	margin: 0;
+	margin-bottom: 52px;
+	width: 420px;
+}
+
+.features-item-1::after {
+	content: "";
+	position: absolute;
+	width: 760px;
+	height: 430px;
+	top: 10px;
+	right: -30px;
+	background-image: url("../img/slide1.png");
+	background-repeat: no-repeat;
+}
+
+.services-list {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+	position: relative;
+	padding-top: 146px;
+}
+
+.services-item {
+	width: 360px;
+}
+
+.services-item-web::before {
+	position: absolute;
+	width: 300px;
+	height: 146px;
+	top: 0;
+	left: 0;
+	content: "";
+	background-image: url("../img/illustration-1.png");
+}
+
+.services-item-app::before {
+	position: absolute;
+	width: 300px;
+	height: 146px;
+	top: 0;
+	left: 400px;
+	content: "";
+	background-image: url("../img/illustration-2.png");
+}
+
+.services-item-presentation::before {
+	position: absolute;
+	width: 300px;
+	height: 146px;
+	top: 0;
+	left: 800px;
+	content: "";
+	background-image: url("../img/illustration-3.png");
+}
+
+.about-us {
+	padding-top: 72px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us-left {
+	width: 660px;
+}
+
+.about-us-right {
+	width: 360px;
+}
+
+.slider-btn {
+	display: none; /*Временно чтобы не мешала*/
 }
