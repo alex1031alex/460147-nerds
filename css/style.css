@@ -459,12 +459,16 @@ a.page-current {
 	background-repeat: no-repeat;
 }
 
+.services {
+	border-bottom: 2px solid #eeeeee;
+}
+
 .services-list {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 80px;
 	position: relative;
-	padding-top: 146px;
+	padding-top: 144px;
 }
 
 .services-item {
@@ -502,7 +506,8 @@ a.page-current {
 }
 
 .about-us {
-	padding-top: 72px;
+	padding-top: 73px;
+	padding-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -511,9 +516,59 @@ a.page-current {
 	width: 660px;
 }
 
+.about-us-left p {
+	margin: 34px auto;
+}
+
+p.about-us-subtitle {
+	margin-top: 38px;
+	margin-bottom: 26px;
+	align-self: flex-end;
+	padding-right: 14px;
+}
+
+.about-us-services-item {
+	padding-bottom: 23px;
+	padding-left: 36px; /*Место под декоративный элемент*/
+}
+
 .about-us-right {
 	width: 360px;
+	padding-top: 172px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
 }
+
+.about-us-right::before {
+	position: absolute;
+	width: 360px;
+	height: 208px;
+	top: -34px;
+	left: 0;
+	content: "";
+	background-image: url("../img/index-logo.png");
+}
+
+.about-us-features-list {
+	display: flex;
+	margin-top: 32px;
+	justify-content: flex-start;
+}
+
+.about-us-features-item {
+	width: 120px;
+}
+
+.about-us-features-item p {
+	line-height: 18px;
+	margin-top: 0px;
+	margin-bottom: 22px; 
+	margin-right: 40px;
+	text-align: left;
+}
+
 
 .slider-btn {
 	display: none; /*Временно чтобы не мешала*/
