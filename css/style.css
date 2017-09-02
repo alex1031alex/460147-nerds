@@ -43,16 +43,16 @@ img {
 }
 
 .btn {
+	display: block;
 	font-size: 16px;
 	color: #ffffff; 
 	font-weight: 500;
 	line-height: 18px;
 	text-transform: uppercase;
 	text-align: center;
-	vertical-align: middle;
 	border: none;
 	border-radius: 2px;
-	padding: 16px 40px;
+	padding: 16px 0;
 }
 
 .btn:active {
@@ -142,24 +142,13 @@ a.page-current {
 	line-height: 55px;
 }
 
-.features-item a {
-	color: #ffffff;
-	background-color: #fb565a;
-	padding: 16px 54px;
-}
-
-.features-item a:hover,
-.features-item a:focus {
-	background-color: #e74246; 
-}
-
-.features-item a:active {
-	background-color: #d7373b;
-	opacity: 0.3;
+.features-item .btn {
+	width: 240px;
 }
 
 .services {
 	padding-bottom: 96px;
+	padding-right: 60px;
 }
 .services-item h3 {
 	font-size: 24px;
@@ -175,7 +164,11 @@ a.page-current {
 	margin-left: 0;
 	margin-right: auto;
 	margin-top: 16px;
-	margin-bottom: 44px;
+	margin-bottom: 32px;
+}
+
+.services-item .btn {
+	width: 160px;
 }
 
 .about-us-left b {
@@ -422,14 +415,22 @@ a.page-current {
 .features-list {                                         /*Стили слайдера главной страницы (раздел features) */
 	margin: 0;
 	padding: 0;
+	position: relative;
 	
+}
+
+.slider-btn {
+	position: absolute;
+	bottom: 40px;
+	left: calc(50% - 50px);
+	width: 100px;
 }
 
 .features-item {
 	display: none;
 	padding-top: 75px;
 	position: relative;
-	padding-bottom: 94px;
+	padding-bottom: 80px;
 	padding-right: 760px;  /*Сюда вставим фоновую картинку*/
 }
 
@@ -447,7 +448,7 @@ a.page-current {
 
 .features-item p {
 	margin: 0;
-	margin-bottom: 52px;
+	margin-bottom: 40px;
 	width: 420px;
 }
 
@@ -464,18 +465,20 @@ a.page-current {
 
 .services {                                                       /*Стили раздела services*/
 	border-bottom: 2px solid #eeeeee;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .services-list {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 80px;
-	position: relative;
-	padding-top: 144px;
+	
 }
 
 .services-item {
-	width: 360px;
+	width: 300px;
+	padding-top: 144px;
+	position: relative;
 }
 
 .services-item-web::before {
@@ -493,7 +496,7 @@ a.page-current {
 	width: 300px;
 	height: 146px;
 	top: 0;
-	left: 400px;
+	left: 0;
 	content: "";
 	background-image: url("../img/illustration-2.png");
 }
@@ -503,7 +506,7 @@ a.page-current {
 	width: 300px;
 	height: 146px;
 	top: 0;
-	left: 800px;
+	left: 0;
 	content: "";
 	background-image: url("../img/illustration-3.png");
 }
@@ -532,8 +535,19 @@ p.about-us-subtitle {
 }
 
 .about-us-services-item {
-	padding-bottom: 23px;
+	margin-bottom: 24px;
 	padding-left: 36px; /*Место под декоративный элемент*/
+	position: relative;
+}
+
+.about-us-services-item::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 2px;
+	background-color: #fb565a;
+	top: 11px;
+	left: 1px;
 }
 
 .about-us-right {
@@ -702,5 +716,4 @@ p.about-us-subtitle {
 }
 
 .slider-btn {
-	display: none; /*Временно чтобы не мешала*/
 }
