@@ -110,7 +110,8 @@ img {
 	padding: 0; /*Сбрасываем отступы по умолчанию у списков*/
 }
 
-.site-navigation a {
+.site-navigation a,
+.user-navigation a {
 	color: #000000;
 }
 
@@ -126,7 +127,7 @@ img {
 
 a.page-current {
 	color: #000000;
-	padding-bottom: 5px;
+	padding-bottom: 8px;
 	border-bottom: 2px solid #fb565a;
 }
 
@@ -392,22 +393,24 @@ a.page-current {
 .site-navigation {
 	margin: 0;
 	margin-top: 27px;
-	margin-left: auto;    /*Расстояние 60px между блоками логотипа и меню*/
+	margin-left: 106px;    /*Расстояние 60px между блоками логотипа и меню*/
 	padding: 0;
 	width: 800px;
 	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 
 .site-navigation li {
-	margin-right: 47px;
+	margin-right: 46px;
 }
 
-.site-navigation li:last-child {
-	margin-right: 0;
-	margin-left: auto;
+.user-navigation {
+	margin: 0;
+	margin-top: 27px;
 }
 
-.basket {
+.user-navigation a {
 	padding-left: 44px;
 }
 
