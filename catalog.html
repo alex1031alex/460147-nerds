@@ -27,35 +27,35 @@
 
 		<main>
 			<div class="page-title-container"><h1 class="page-title">Магазин готовых шаблонов</h1></div>
-			<div class="container">
-				<section class="filter-wrap">
+			<div class="container main-wrapper"> <!--Чтобы использовать этот див для построения сетки-->
+				<section class="filter">
 					<h2 class="visually-hidden">Фильтр продукции</h2>
-					<form action="https://echo.htmlacademy.ru" method="get" class="filter">
+					<form action="https://echo.htmlacademy.ru" method="get" class="filter-form">
 						<fieldset>
 							<legend>Стоимость:</legend>
 							<div id="slider">Здесь будет слайдер</div>
 						</fieldset>
 						<fieldset class="filter-grid">
 							<legend>Сетка</legend>
-							<input type="radio" name="grid" value="adaptive" id="adaptive-grid" checked>
-							<label for="adaptive-grid">Адаптивная</label>
-							<input type="radio" name="drid" value="fixed" id="fixed-grid">
-							<label for="fixed-grid">Фиксированная</label>
-							<input type="radio" name="drid" value="rubber" id="rubber-grid">
-							<label for="rubber-grid">Резиновая</label>
+							<p><input type="radio" name="grid" value="adaptive" id="adaptive-grid" checked>
+							<label for="adaptive-grid">Адаптивная</label></p>
+							<p><input type="radio" name="drid" value="fixed" id="fixed-grid">
+							<label for="fixed-grid">Фиксированная</label></p>
+							<p><input type="radio" name="drid" value="rubber" id="rubber-grid">
+							<label for="rubber-grid">Резиновая</label></p>
 						</fieldset>
 						<fieldset class="filter-features">
 							<legend>Особенности:</legend>
-							<input type="checkbox" name="slider" id="slider-feature" checked>
-							<label for="slider-feature">Слайдер</label>
-							<input type="checkbox" name="feature" id="feature-feature">
-							<label for="feature-feature">Блок преимуществ</label>
-							<input type="checkbox" name="news" id="news-feature" checked>
-							<label for="news-feature">Новости</label>
-							<input type="checkbox" name="gallery" id="gallery-feature">
-							<label for="gallery-feature">Галерея</label>
-							<input type="checkbox" name="basket" id="basket-feature">
-							<label for="basket-feature">Слайдер</label>
+							<p><input type="checkbox" name="slider" id="slider-feature" checked>
+							<label for="slider-feature">Слайдер</label></p>
+							<p><input type="checkbox" name="feature" id="feature-feature">
+							<label for="feature-feature">Блок преимуществ</label></p>
+							<p><input type="checkbox" name="news" id="news-feature" checked>
+							<label for="news-feature">Новости</label></p>
+							<p><input type="checkbox" name="gallery" id="gallery-feature">
+							<label for="gallery-feature">Галерея</label></p>
+							<p><input type="checkbox" name="basket" id="basket-feature">
+							<label for="basket-feature">Слайдер</label></p>
 						</fieldset>
 						<button type="submit" class="btn filter-btn">Показать</button>
 					</form>
@@ -63,7 +63,7 @@
 				<section class="main-content">
 					<h2 class="visually-hidden">Каталог макетов</h2>
 					<div class="sorting">
-						<b>Сортировать:</b>
+						<p><b>Сортировать:</b></p>
 						<ul class="sorting-list">
 							<li class="sorting-item"><a href="#">По цене</a></li>
 							<li class="sorting-item"><a href="#">По типу</a></li>
@@ -84,7 +84,7 @@
 									<a href="#" class="btn btn-red">9900 руб.</a>
 								</div>
 								<div class="catalog-item-picture">
-									<img src="img/sedona.jpg" alt="Макет сайта Седона" width="360" height="615">
+									<img src="img/sedona.jpg" alt="Макет сайта Седона" width="360">
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -94,7 +94,7 @@
 									<a href="#" class="btn btn-red">9900 руб.</a>
 								</div>
 								<div class="catalog-item-picture">
-									<img src="img/pink.jpg" alt="Макет сайта Pink App" width="360" height="615">
+									<img src="img/pink.jpg" alt="Макет сайта Pink App" width="360">
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -104,8 +104,7 @@
 									<a href="#" class="btn btn-red">9900 руб.</a>
 								</div>
 								<div class="catalog-item-picture">
-									<img src="img/barbershop.jpg" alt="Макет сайта барбершопа Бородинский" width="360"
-									height="615">
+									<img src="img/barbershop.jpg" alt="Макет сайта барбершопа Бородинский" width="360">
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -115,7 +114,7 @@
 									<a href="#" class="btn btn-red">9900 руб.</a>
 								</div>
 								<div class="catalog-item-picture">
-									<img src="img/mishka.jpg" alt="Макет сайта магазина Мишка" width="360" height="615">
+									<img src="img/mishka.jpg" alt="Макет сайта магазина Мишка" width="360">
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -125,7 +124,7 @@
 									<a href="#" class="btn btn-red">9900 руб.</a>
 								</div>
 								<div class="catalog-item-picture">
-									<img src="img/aplus.jpg" alt="Макет сайта курсов А+" width="360" height="615">
+									<img src="img/aplus.jpg" alt="Макет сайта курсов А+" width="360">
 								</div>
 							</li>
 							<li class="catalog-item">
@@ -135,7 +134,7 @@
 									<a href="#" class="btn btn-red">9900 руб.</a>
 								</div >
 								<div class="catalog-item-picture">
-									<img src="img/quast.jpg" alt="Макет сайта Кваст" width="360" height="615">
+									<img src="img/quast.jpg" alt="Макет сайта Кваст" width="360">
 								</div>
 							</li>
 						</ul>

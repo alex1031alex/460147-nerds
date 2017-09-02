@@ -366,7 +366,7 @@ a.page-current {
 
 /*Сеточные стили*/
 
-.page-header {
+.page-header {                                        /*Стили шапки*/
 	margin: 0;
 	padding: 0;
 	padding-top: 48px;
@@ -406,15 +406,20 @@ a.page-current {
 }
 
 .user-navigation {
-	margin: 0;
-	margin-top: 27px;
+	margin: 27px 0 0 0;
 }
 
 .user-navigation a {
 	padding-left: 44px;
 }
 
-.features-list {
+.page-title {
+	margin: 0;
+	padding-top: 70px;
+	padding-bottom: 108px;
+}
+
+.features-list {                                         /*Стили слайдера главной страницы (раздел features) */
 	margin: 0;
 	padding: 0;
 	
@@ -457,7 +462,7 @@ a.page-current {
 	background-repeat: no-repeat;
 }
 
-.services {
+.services {                                                       /*Стили раздела services*/
 	border-bottom: 2px solid #eeeeee;
 }
 
@@ -503,7 +508,7 @@ a.page-current {
 	background-image: url("../img/illustration-3.png");
 }
 
-.about-us {
+.about-us {                                                       /*Стили раздела about-us*/
 	padding-top: 73px;
 	padding-bottom: 50px;
 	display: flex;
@@ -568,7 +573,7 @@ p.about-us-subtitle {
 	text-align: left;
 }
 
-.partners {
+.partners {                                                    /*Стили раздела parters*/
 	margin-bottom: 80px;
 	border-bottom: 2px solid #eeeeee;
 }
@@ -598,7 +603,62 @@ p.about-us-subtitle {
 	padding-left: 0;
 }
 
-.footer-map .container {
+.main-wrapper {                                                  /*Стили страницы каталога */
+	margin-top: 56px;
+	display: flex;
+}
+
+.filter {
+	width:260px;
+}
+
+.filter-form fieldset {
+	border: none;
+	padding: 0;
+}
+
+.main-content {
+	width: 760px;
+	margin-left: 140px;
+}
+
+.sorting-list {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 150px;
+}
+
+.sorting > p:first-child {
+	margin: 0;
+	position: absolute;
+}
+
+.catalog-list {
+	margin-top: 50px;
+	padding-top: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.catalog-item {
+	width: 360px;
+	padding-top: 40px; /*Под псевдоэлемент*/
+	padding-bottom: 26px;
+}
+
+.catalog-item-info {
+	display: none;
+}
+
+.pagination-list {
+	margin-top: 44px;
+	margin-bottom: 70px;
+	display: flex;
+
+}
+
+.footer-map .container {                                         /*Стили подвала*/
 	position: relative;
 }
 .footer-contacts {
