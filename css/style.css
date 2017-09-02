@@ -211,11 +211,6 @@ a.page-current {
 	opacity: 1;
 }
 
-.partners-list {
-	border-top: 2px solid #eeeeee;
-	border-bottom: 2px solid #eeeeee;
-}
-
 .footer-contacts span {
 	font-size: 18px;
 	color: #000000; ;
@@ -510,6 +505,7 @@ a.page-current {
 	padding-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 2px solid #eeeeee;
 }
 
 .about-us-left {
@@ -569,6 +565,78 @@ p.about-us-subtitle {
 	text-align: left;
 }
 
+.partners {
+	margin-bottom: 80px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.partners-list {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 46px;
+	padding-bottom: 40px;
+	padding-left:  0px;
+	padding-right: 0px;
+}
+
+.partners-item {
+	width: 260px;
+	padding-left: 20px;
+	padding-right: 20px; /*Общая ширина для каждого блока партнера 300рх. Но для крайних блоков нужно переопределить на 280рх*/
+	text-align: center;
+}
+
+.partners-item:nth-child(4n) {
+	padding-right: 0;
+}
+
+.partners-item:first-child,
+.partners-item:nth-child(4n+1) {
+	padding-left: 0;
+}
+
+.footer-map .container {
+	position: relative;
+}
+.footer-contacts {
+	margin: 0;
+	position: absolute;
+	top: -508px;
+	left: 22px;
+	padding: 48px;
+	background-color: #ffffff;
+}
+
+.footer-contacts p {
+	line-height: 18px;
+	margin-top: 20px; 
+}
+
+.main-footer-btn {
+	margin-top: 20px;
+	padding-left: 44px;
+	padding-right: 44px;
+
+}
+
+.footer-bottom {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer-social-list {
+	min-width: 400px;
+}
+
+.footer-bottom p {
+	width: 550px;
+	line-height: 32px;
+}
+
+.modal {
+	display: none;
+}
 
 .slider-btn {
 	display: none; /*Временно чтобы не мешала*/
