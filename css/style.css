@@ -580,6 +580,7 @@ margin-bottom: 60px;
 
 .filter-form fieldset {
 	border: none;
+	margin: 0;
 	padding: 0;
 }
 
@@ -675,6 +676,19 @@ margin-bottom: 60px;
   background: #f1f1f1;
 }
 
+fieldset.filter-grid {
+	margin-bottom: 26px;
+}
+
+.filter-grid label,
+.filter-features label {
+	padding-left: 33px;
+}
+
+fieldset.filter-features {
+	margin-bottom: 30px;
+}
+
 .filter-btn {
 	font-size: 16px;
 	color: #000000; 
@@ -685,7 +699,7 @@ margin-bottom: 60px;
 	height: 50px;
 	border-radius: 2px;
 }
-outline
+
 .filter-btn:hover,
 .filter-btn:focus {
 	background-color: #dfdfdf;
@@ -742,8 +756,40 @@ outline
 
 .catalog-item {
 	width: 360px;
-	padding-top: 40px; /*Под псевдоэлемент*/
-	padding-bottom: 26px;
+	padding-top: 0px; /*Под псевдоэлемент*/
+	padding-bottom: 0px;
+}
+
+.catalog-item-picture {
+	height: 616px;
+	background-color: #e9e9e9;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-bottom: 34px;
+	position: relative;
+}
+
+.catalog-item-picture:hover {
+	cursor: pointer;
+	background: #4d4d4d;
+}
+
+.catalog-item-picture::before {
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	left: 16px;
+	top: 15px;
+	box-shadow: 
+	23px 0 0 0 #ffffff,
+	46px 0 0 0 #ffffff;
+}
+
+.catalog-item-picture img {
+	padding-top: 40px;
 }
 
 .catalog-item-info {
