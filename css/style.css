@@ -448,7 +448,7 @@ p.about-us-subtitle {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 46px;
-	padding-bottom: 36px;
+	padding-bottom: 34px;
 	padding-left:  0px;
 	padding-right: 0px;
 }
@@ -462,6 +462,7 @@ p.about-us-subtitle {
 
 .partners-item:nth-child(4n) {
 	padding-right: 0;
+	margin-bottom: 0;
 }
 
 .partners-item:first-child,
@@ -475,6 +476,18 @@ p.about-us-subtitle {
 
 .partners-item a:hover {
 	opacity: 1;
+}
+
+img[alt="Логотип HTML Academy"] {
+	padding-top: 16px;
+}
+
+img[alt="Логотип компании Пинк"] {
+	padding-top: 20px;
+}
+
+img[alt="Логотип компании Мишка"] {
+	padding-top: 10px;
 }
 
 .footer-map {
