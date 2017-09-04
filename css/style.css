@@ -724,9 +724,13 @@ fieldset.filter-features {
 	margin-left: 140px;
 }
 
+.sorting {
+	display: flex;
+	justify-content: space-between;
+}
+
 .sorting > p:first-child {
 	margin: 0;
-	position: absolute;
 }
 
 .sorting b {
@@ -738,9 +742,10 @@ fieldset.filter-features {
 }
 
 .sorting-list {
-	margin-left: 150px;
+	width: 360px;
+	margin-right: 0;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 .sorting-item a {
@@ -757,6 +762,32 @@ fieldset.filter-features {
 
 .sorting-item a:active {
 	color: rgba(0, 0, 0, 1);
+}
+
+.sorting-arrows {
+	margin-left: 2px;
+}
+.arrow-down,
+.arrow-up {
+	margin-left: 15px;
+}
+
+.arrow-down path,
+.arrow-up path {
+	opacity: 0.2;
+}
+
+.arrow-down:hover path,
+.arrow-up:hover path,
+.arrow-down:hover path,
+.arrow-up:hover path {
+	opacity: 0.5;
+}
+
+.arrow-down:active path,
+.arrow-up:active path,
+.active path {
+	opacity: 1;
 }
 
 .catalog-list {
