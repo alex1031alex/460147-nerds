@@ -969,7 +969,6 @@ input[type="checkbox"]:disabled + .filter-features-checkbox::after {
 
 .catalog-list {
     margin-top: 52px;
-    margin-bottom: 27px;
     padding-top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1064,6 +1063,7 @@ input[type="checkbox"]:disabled + .filter-features-checkbox::after {
 }
 
 .pagination-list {
+    margin-top: 26px;
     margin-bottom: 62px;
     display: -webkit-box;
     display: -ms-flexbox;
