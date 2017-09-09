@@ -557,7 +557,6 @@ img[alt="Логотип компании Мишка"] {
 .footer-contacts span {
   font-size: 18px;
   color: #000000;
-  ;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
@@ -571,9 +570,8 @@ img[alt="Логотип компании Мишка"] {
 }
 
 .main-footer-btn {
+  width: 100%; 
   margin-top: 34px;
-  padding-left: 44px;
-  padding-right: 44px;
 }
 
 .footer-bottom {
