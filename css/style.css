@@ -158,7 +158,7 @@ img {
 
 a.page-current {
     color: #000000;
-    padding-bottom: 8px;
+    padding-bottom: 2px;
     border-bottom: 2px solid #fb565a;
 }
 
@@ -320,7 +320,7 @@ span.slide-control-current {
 }
 
 .services-item p {
-    width: 244px;
+    width: 245px;
     margin-left: 0;
     margin-right: auto;
     margin-top: 16px;
@@ -526,9 +526,11 @@ img[alt="Логотип компании Мишка"] {
 margin-bottom: 60px;
 }
 
-.footer-map img {
+.footer-map iframe {
     height: 415px;
+    width: 100%;
     position: absolute;
+    border: 0;
     z-index: -1;
 }
 
