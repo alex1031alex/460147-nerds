@@ -537,7 +537,6 @@ img[alt="Логотип компании Мишка"] {
   width: 100%;
   position: absolute;
   border: 0;
-  z-index: -1;
 }
 
 .footer-map .container {
@@ -552,6 +551,8 @@ img[alt="Логотип компании Мишка"] {
   padding: 50px;
   padding-top: 50px;
   background-color: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 .footer-contacts span {
@@ -1013,7 +1014,6 @@ input[type="checkbox"]:disabled+.filter-features-checkbox::after {
 }
 
 .catalog-item:hover .catalog-item-picture {
-  cursor: pointer;
   background: #4d4d4d;
 }
 
