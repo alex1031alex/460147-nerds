@@ -343,13 +343,24 @@ a .active {
 .about {
   padding-top: 73px;
   padding-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   border-bottom: 2px solid #eeeeee;
+}
+
+.about-intro {
+  padding-right: 400px;
+}
+
+.about-intro b {
+  display: block;
+  margin-bottom: 34px;
+  font-size: 45px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.about-description {
+
 }
 
 .about-left {
@@ -420,37 +431,24 @@ p.about-subtitle {
   background-image: url("../img/index-logo.png");
 }
 
-.about-features-list {
-  text-align: center;
-  margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.about-features-item {
+.about-stats table {
   width: 120px;
 }
 
-.about-features-item p {
+.about-stats th {
   line-height: 18px;
   text-align: left;
-  margin-top: 0px;
-  margin-bottom: 22px;
-  margin-right: 40px;
+  padding-top: 22px;
+  font-weight: normal;
 }
 
-.about-features-item b {
+.about-stats td {
   font-size: 45px;
-  color: #000000;
+  color: #000;
   font-weight: 700;
-  line-height: 10px;
 }
 
-.about-features-item sup {
+.about-stats sup {
   font-size: 28px;
 }
 
