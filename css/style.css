@@ -239,10 +239,9 @@ a .active {
   border-color: #c1c1c1;
 }
 
-.services {
+.services-container {
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-right: 60px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -422,7 +421,7 @@ a .active {
   font-size: 28px;
 }
 
-.partners {
+.partners-container {
   margin-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -431,30 +430,18 @@ a .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   padding-top: 46px;
   padding-bottom: 34px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-right: -53px;
 }
 
 .partners-item {
-  width: 260px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 250px;
+  margin-right: 53px;
   text-align: center;
-}
-
-.partners-item:nth-child(4n) {
-  padding-right: 0;
-  margin-bottom: 0;
-}
-
-.partners-item:first-child,
-.partners-item:nth-child(4n+1) {
-  padding-left: 0;
 }
 
 .partners-item a {
@@ -463,18 +450,6 @@ a .active {
 
 .partners-item a:hover {
   opacity: 1;
-}
-
-img[alt="Логотип HTML Academy"] {
-  padding-top: 16px;
-}
-
-img[alt="Логотип компании Пинк"] {
-  padding-top: 20px;
-}
-
-img[alt="Логотип компании Мишка"] {
-  padding-top: 10px;
 }
 
 .footer-map {
