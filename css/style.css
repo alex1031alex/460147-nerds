@@ -847,14 +847,32 @@ input[type="checkbox"]:disabled+.filter-features-checkbox::after {
   justify-content: space-between;
 }
 
-.sorting>p:first-child {
-  margin: 0;
-}
-
-.sorting b {
+.sorting-text {
+  margin-right: auto;
   font-size: 18px;
   color: #000000;
   font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting-column {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 360px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting-types {
+  display: flex;
+}
+
+.sorting-type {
+  display: block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -870,46 +888,24 @@ input[type="checkbox"]:disabled+.filter-features-checkbox::after {
   justify-content: space-between;
 }
 
-.sorting-item a {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.sorting-item a:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.sorting-item a:active {
-  color: rgba(0, 0, 0, 1);
-}
-
-.sorting-arrows {
+.sorting-controls {
   margin-left: 2px;
 }
 
-.arrow-down,
-.arrow-up {
-  margin-left: 15px;
+.sorting-controls input {
+  display: none;
 }
 
-.arrow-down path,
-.arrow-up path {
-  opacity: 0.2;
-}
-
-.arrow-down:hover path,
-.arrow-up:hover path,
-.arrow-down:hover path,
-.arrow-up:hover path {
+input[name="sorting-direction"]+label {
+  color: #000;
   opacity: 0.5;
 }
 
-.arrow-down:active path,
-.arrow-up:active path,
-.active path {
+input[name="sorting-direction"]:hover+label {
+  color: rgba(0, 0, 0, 0.6);
+} 
+
+input[name="sorting-direction"]:checked+label {
   opacity: 1;
 }
 
