@@ -341,13 +341,22 @@ a .active {
 }
 
 .about {
-  padding-top: 73px;
+  padding-top: 35px;
   padding-bottom: 50px;
   border-bottom: 2px solid #eeeeee;
 }
 
 .about-intro {
-  padding-right: 400px;
+  padding-top: 38px;
+  padding-right: 500px;
+  background-image: url("../img/index-logo.png");
+  background-repeat: no-repeat;
+  background-position: right, top;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-intro b {
@@ -431,8 +440,9 @@ p.about-subtitle {
   background-image: url("../img/index-logo.png");
 }
 
-.about-stats table {
+.about-stats {
   width: 120px;
+
 }
 
 .about-stats th {
