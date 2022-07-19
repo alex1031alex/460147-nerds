@@ -866,6 +866,10 @@ input[type="checkbox"]:disabled+.filter-features-checkbox::after {
 
 .sorting-types {
   display: flex;
+  flex-wrap: wrap;
+  min-width: 280px;
+  justify-content: space-between;
+  margin-right: auto;
 }
 
 .sorting-type {
@@ -877,23 +881,16 @@ input[type="checkbox"]:disabled+.filter-features-checkbox::after {
   text-transform: uppercase;
 }
 
-.sorting-list {
-  width: 360px;
-  margin-right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
 .sorting-controls {
-  margin-left: 2px;
+  margin-right: -20px;
 }
 
 .sorting-controls input {
   display: none;
+}
+
+.sorting-controls label {
+  margin-right: 20px;
 }
 
 input[name="sorting-direction"]+label {
