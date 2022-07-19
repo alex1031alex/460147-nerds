@@ -206,7 +206,7 @@ a .active {
 
 .slider-controls {
   position: absolute;
-  bottom: 86px;
+  bottom: 96px;
   left: 540px;
   min-width: 80px;
   display: flex;
@@ -237,29 +237,6 @@ a .active {
 
 .slider-control-active::after {
   border-color: #c1c1c1;
-}
-
-/* .slider-control span {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin: 0 24px 0 0;
-  padding: 0;
-  background: white;
-  border: 2px solid white;
-  vertical-align: top;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 0 5px #ffffff;
-  box-shadow: 0 0 0 5px #ffffff;
-} */
-
-.slider-control span:last-child {
-  margin-right: 0;
-}
-
-span.slide-control-current {
-  border: 2px solid #c1c1c1;
 }
 
 .services {
