@@ -340,7 +340,7 @@ a .active {
   background-color: #eab534;
 }
 
-.about-us {
+.about {
   padding-top: 73px;
   padding-bottom: 50px;
   display: -webkit-box;
@@ -352,41 +352,42 @@ a .active {
   border-bottom: 2px solid #eeeeee;
 }
 
-.about-us-left {
+.about-left {
   width: 660px;
 }
 
-.about-us-left b {
+.about-left b {
+  display: block;
+  margin-bottom: 34px;
   font-size: 45px;
   color: #000000;
   font-weight: 500;
   line-height: 45px;
 }
 
-.about-us-left p {
-  margin: 34px auto;
+.about-description {
+  margin-bottom: 38px;
 }
 
-p.about-us-subtitle {
+p.about-subtitle {
   font-size: 16px;
   color: #000000;
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  margin-top: 38px;
   margin-bottom: 26px;
   margin-right: 14px;
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
-.about-us-services-item {
+.about-app-item {
   margin-bottom: 24px;
   padding-left: 36px;
   position: relative;
 }
 
-.about-us-services-item::before {
+.about-app-item::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -396,7 +397,7 @@ p.about-us-subtitle {
   left: 1px;
 }
 
-.about-us-right {
+.about-right {
   width: 360px;
   padding-top: 172px;
   position: relative;
@@ -409,7 +410,7 @@ p.about-us-subtitle {
   flex-direction: column;
 }
 
-.about-us-right::before {
+.about-right::before {
   position: absolute;
   width: 360px;
   height: 208px;
@@ -419,7 +420,7 @@ p.about-us-subtitle {
   background-image: url("../img/index-logo.png");
 }
 
-.about-us-features-list {
+.about-features-list {
   text-align: center;
   margin-top: 32px;
   display: -webkit-box;
@@ -430,11 +431,11 @@ p.about-us-subtitle {
   justify-content: flex-start;
 }
 
-.about-us-features-item {
+.about-features-item {
   width: 120px;
 }
 
-.about-us-features-item p {
+.about-features-item p {
   line-height: 18px;
   text-align: left;
   margin-top: 0px;
@@ -442,14 +443,14 @@ p.about-us-subtitle {
   margin-right: 40px;
 }
 
-.about-us-features-item b {
+.about-features-item b {
   font-size: 45px;
   color: #000000;
   font-weight: 700;
   line-height: 10px;
 }
 
-.about-us-features-item sup {
+.about-features-item sup {
   font-size: 28px;
 }
 
