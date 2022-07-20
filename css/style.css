@@ -891,11 +891,12 @@ input[type="checkbox"]:disabled+.filter-features-checkbox::after {
 
 .sorting-controls label {
   margin-right: 20px;
+
 }
 
 input[name="sorting-direction"]+label {
-  color: #000;
-  opacity: 0.5;
+  color: #231f20;
+  opacity: 0.4;
 }
 
 input[name="sorting-direction"]:hover+label {
