@@ -5,7 +5,7 @@
 		<title>Дизайн-студия Нёрдс</title>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header">
@@ -17,7 +17,7 @@
 					<ul class="site-navigation">
 						<li><a href="#">Студия</a></li>
 						<li><a href="#">Клиенты</a></li>
-						<li><a class="page-current">Магазин</a></li>
+						<li><a class="active">Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					<p class="user-navigation"><a href="#">Корзина</a></p>
@@ -36,13 +36,13 @@
 							<div class="range-controls">
 								<div class="scale">
 									<div class="bar"></div>
+                  <div class="toggle toggle-min" draggable="true"></div>
+                  <div class="toggle toggle-max" draggable="true"></div>
 								</div>
-								<div class="toggle toggle-min"></div>
-								<div class="toggle toggle-max"></div>
 							</div>
 							<div class="price-controls">
-								<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-								<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+								<label class="min-price">от <input name="min-price" type="number" value="0" min="0"></label>
+								<label class="max-price">до <input name="max-price" type="number" value="15000" max="15000"></label>
 							</div>
 						</div>
 					</fieldset>
@@ -74,16 +74,24 @@
 				<section class="main-content">
 					<h2 class="visually-hidden">Каталог макетов</h2>
 					<div class="sorting">
-						<p><b>Сортировать:</b></p>
-						<ul class="sorting-list">
-							<li class="sorting-item"><a href="#">По цене</a></li>
-							<li class="sorting-item"><a href="#">По типу</a></li>
-							<li class="sorting-item"><a href="#">По названию</a></li>
-							<li class="sorting-item sorting-arrows">
-								<a href="#" class="arrow-down active"><span class="visually-hidden">Сверху вниз</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
-								<a href="#" class="arrow-up"><span class="visually-hidden">Снизу вверх</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
-							</li>
-						</ul>
+						<p class="sorting-text"><b>Сортировать:</b></p>
+            <div class="sorting-column">
+              <div class="sorting-types">
+                <a class="sorting-type" href="#">По цене</a>
+                <a class="sorting-type" href="#">По типу</a>
+                <a class="sorting-type" href="#">По названию</a>
+              </div>
+              <div class="sorting-controls">
+                <input id="arrow-up" type="radio" name="sorting-direction" value="up" checked>
+                <label for="arrow-up">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="currentColor" d="M5.5 10L0 0h11"/></svg>
+                </label>
+                <input id="arrow-down" type="radio" name="sorting-direction" value="down">
+                <label for="arrow-down">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="currentColor" d="M5.5 0L0 10h11z"/></svg>
+                </label>
+              </div>
+            </div>
 					</div>
 					<section class="catalog">
 						<h2 class="visually-hidden">Список макетов</h2>
